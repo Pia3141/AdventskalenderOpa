@@ -2,9 +2,8 @@ const calendar = document.getElementById('calendar');
 const modal = document.getElementById('imageModal');
 const field = document.getElementById('modal-body');
 const title = document.getElementById('title');
-let save= null;
 const myModal = new bootstrap.Modal(modal);
-
+let save = null;
 const list = 
     [
         {day: '1', text:'Großwallstadt',link:''},
@@ -54,7 +53,6 @@ let show = (e) =>{
         if (save) {
             btn.removeEventListener('click', save);
         }
-
         save = () => {
             const link = document.createElement('a');
             link.href = list[id-1].link;
@@ -63,8 +61,6 @@ let show = (e) =>{
             link.click();
             document.body.removeChild(link);
         };
-
-        // add the fresh handler
         btn.addEventListener('click', save);
     }
 }
