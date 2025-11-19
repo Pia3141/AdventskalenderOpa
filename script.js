@@ -54,7 +54,7 @@ let show = (e) =>{
                 const link = document.createElement('a');
 
                 link.href = `${list[id-1]['link']}`;
-                link.download = 'img.jpg';
+                link.download = `${list[id-1]['text']}.jpg`;
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
