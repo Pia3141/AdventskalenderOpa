@@ -39,8 +39,18 @@ for(let i = 1; i <= 24; i++){
 
 let doors = Array.from(document.getElementsByClassName('door'));
 
+let saveFile = (id )=>{
+    const link = document.createElement('a');
+
+        link.href = `${list[id-1]['link']}`;
+        link.download = `${list[id-1]['text']}.jpg`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+}
+
 let show = (e) =>{
-    let id = e.target.id;
+    let id = Number(e.target.id);
     let today = new Date();
     let open = new Date(year = 2025, month=11-1, day = 1) // !!!ÄNDERN
 
@@ -48,6 +58,9 @@ let show = (e) =>{
         title.innerText = `${list[id-1]['text']}`;
         field.innerHTML= `<img src='${list[id-1]['link']}'>`;
         myModal.show();
+
+        let btn =  document.getElementById('save-btn');
+        btn.addEventListener('click', ()=>saveFile(id), {once:true});
     }
 }
 
@@ -55,15 +68,3 @@ doors.forEach((d)=>{
     d.addEventListener('click', show);
 })
 
-
-let btn =  document.getElementById('save-btn');
-btn.addEventListener('click', ()=> {
-        const link = document.createElement('a');
-
-        link.href = `${list[id-1]['link']}`;
-        link.download = `${list[id-1]['text']}.jpg`;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-})
-    
