@@ -48,17 +48,6 @@ let show = (e) =>{
         title.innerText = `${list[id-1]['text']}`;
         field.innerHTML= `<img src='${list[id-1]['link']}'>`;
         myModal.show();
-
-        let btn =  document.getElementById('save-btn');
-        btn.addEventListener('click', ()=> {
-                const link = document.createElement('a');
-
-                link.href = `${list[id-1]['link']}`;
-                link.download = `${list[id-1]['text']}.jpg`;
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-        })
     }
 }
 
@@ -66,3 +55,15 @@ doors.forEach((d)=>{
     d.addEventListener('click', show);
 })
 
+
+let btn =  document.getElementById('save-btn');
+btn.addEventListener('click', ()=> {
+        const link = document.createElement('a');
+
+        link.href = `${list[id-1]['link']}`;
+        link.download = `${list[id-1]['text']}.jpg`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+})
+    
