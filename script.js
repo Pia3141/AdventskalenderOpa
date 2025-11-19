@@ -43,8 +43,6 @@ let show = (e) =>{
     let id = e.target.id;
     let today = new Date();
     let open = new Date(year = 2025, month=11-1, day = 1) // !!!ÄNDERN
-    console.log('Today:', today);
-    console.log('Opens:', open);
 
     if (open <= today){
         title.innerText = `${list[id-1]['text']}`;
