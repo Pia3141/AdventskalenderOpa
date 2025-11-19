@@ -2,7 +2,7 @@ const calendar = document.getElementById('calendar');
 const modal = document.getElementById('imageModal');
 const field = document.getElementById('modal-body');
 const title = document.getElementById('title');
-
+let save= null;
 const myModal = new bootstrap.Modal(modal);
 
 const list = 
@@ -38,29 +38,34 @@ for(let i = 1; i <= 24; i++){
 }
 
 let doors = Array.from(document.getElementsByClassName('door'));
-
-let saveFile = (id )=>{
-    const link = document.createElement('a');
-
-        link.href = `${list[id-1]['link']}`;
-        link.download = `${list[id-1]['text']}.jpg`;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-}
+   
 
 let show = (e) =>{
     let id = Number(e.target.id);
     let today = new Date();
-    let open = new Date(year = 2025, month=11-1, day = 1) // !!!ÄNDERN
+    let open = new Date(2025, 3, 1); // !!!ÄNDERN
 
     if (open <= today){
-        title.innerText = `${list[id-1]['text']}`;
+        title.innerText = list[id-1]['text']
         field.innerHTML= `<img src='${list[id-1]['link']}'>`;
         myModal.show();
 
-        let btn =  document.getElementById('save-btn');
-        btn.addEventListener('click', ()=>saveFile(id), {once:true});
+       let btn = document.getElementById('save-btn');
+        if (save) {
+            btn.removeEventListener('click', save);
+        }
+
+        save = () => {
+            const link = document.createElement('a');
+            link.href = list[id-1].link;
+            link.download = list[id-1].text;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+
+        // add the fresh handler
+        btn.addEventListener('click', save);
     }
 }
 
