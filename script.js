@@ -6,10 +6,10 @@ const myModal = new bootstrap.Modal(modal);
 let save = null;
 const list = 
     [
-        {day: '1', text:'Großwallstadt',link:''},
+        {day: '1', text:'Großwallstadt',link:'files/nord.jpg'},
         {day: '2', text:'Feuerwehrhaus',link:'files/Feuerwehrhaus.jpg'},
         {day: '3', text:'TV Großwallstadt Vereinsheim',link:'files/TVG.jpg'},
-        {day: '4', text:'Wendelinuskapelle',link:''},
+        {day: '4', text:'Blick auf den Main',link:'files/main.jpg'},
         {day: '5', text:'Turnhalle',link:'files/Turnhalle.jpg'},
         {day: '6', text:'Rathaus',link:'files/Rathaus.jpg'},
         {id: '7', text:'Kirche',link:'files/Kirche.jpg'},
@@ -23,10 +23,10 @@ const list =
         {id: '15', text:'Pfarrheim',link:'files/Pfarrheim.jpg'},
         {id: '16', text:'Kreuz am Kehlpfad',link:'files/Kreuz.jpg'},
         {id: '17', text:'Blaue Brücke',link:''},
-        {id: '18', text:'Weinberg',link:''},
+        {id: '18', text:'Großwallstadt und Kleinwallstadt',link:'files/sued.jpg'},
         {id: '19', text:'Ölbergkapelle',link:'files/Ölbergkapelle_innen.jpg'},
         {id: '20', text:'Schleuse',link:'files/Schleuse.jpg'},
-        {id: '21', text:'Lourdes-Grotte',link:''},
+        {id: '21', text:'Heimatmuseum',link:''},
         {id: '22', text:'Brunnen hinterm Turm',link:'files/Brunnen.jpg'},
         {id: '23', text:'Kirche',link:'files/Kirche_innen.jpg'},
         {id: '24', text:'Fröhliche Weihnachten',link:''},
