@@ -65,14 +65,16 @@ img {
 
 @media only screen and (max-width: 600px) {
     body {
+        background-repeat: no-repeat;
         background-size: cover;
-        background-color: #591C21; 
+        background-position: center top;
+        background-attachment: fixed; 
+        overflow-y: scroll;
     }
     #calendar {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(8, 1fr);
         gap: 10px;
-        margin: 5px;
     }
     .door{
         width: 25vw;
