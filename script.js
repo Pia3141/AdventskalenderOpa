@@ -10,25 +10,25 @@ const list =
         {day: '2', text:'Feuerwehrhaus',link:'files/Feuerwehrhaus.jpg'},
         {day: '3', text:'TV Großwallstadt Vereinsheim',link:'files/TVG.jpg'},
         {day: '4', text:'Wendelinuskapelle',link:''},
-        {day: '5', text:'Turnhalle',link:''},
-        {day: '6', text:'Rathaus',link:''},
-        {id: '7', text:'Kirche',link:''},
-        {id: '8', text:'Mainwiese',link:''},
-        {id: '9', text:'Volkshalle',link:''},
-        {id: '10', text:'Turm',link:''},
+        {day: '5', text:'Turnhalle',link:'files/Turnhalle.jpg'},
+        {day: '6', text:'Rathaus',link:'files/Rathaus.jpg'},
+        {id: '7', text:'Kirche',link:'files/Kirche.jpg'},
+        {id: '8', text:'Ölbergkapelle',link:'files/Ölbergkapelle.jpg'},
+        {id: '9', text:'Volkshalle',link:'files/Volkshalle.jpg'},
+        {id: '10', text:'Turm',link:'files/Turm.jpg'},
         {id: '11', text:'Alte Schule',link:''},
-        {id: '12', text:'Weichbild',link:'files/Weichbild.jpg'},
-        {id: '13', text:'Ortskern',link:''},
+        {id: '12', text:'Schule',link:''},
+        {id: '13', text:'Ortskern',link:'files/Ortskern.jpg'},
         {id: '14', text:'Mutterkapelle',link:''},
-        {id: '15', text:'Pfarrheim',link:''},
+        {id: '15', text:'Pfarrheim',link:'files/Pfarrheim.jpg'},
         {id: '16', text:'Kreuz am Kehlpfad',link:'files/Kreuz.jpg'},
         {id: '17', text:'Blaue Brücke',link:''},
         {id: '18', text:'Weinberg',link:''},
-        {id: '19', text:'Ölbergkapelle',link:''},
+        {id: '19', text:'Ölbergkapelle',link:'files/Ölbergkapelle_innen.jpg'},
         {id: '20', text:'Schleuse',link:'files/Schleuse.jpg'},
         {id: '21', text:'Lourdes-Grotte',link:''},
-        {id: '22', text:'Blick auf den Main',link:''},
-        {id: '23', text:'Heimatmuseum',link:''},
+        {id: '22', text:'Brunnen hinterm Turm',link:'files/Brunnen.jpg'},
+        {id: '23', text:'Kirche',link:'files/Kirche_innen.jpg'},
         {id: '24', text:'Fröhliche Weihnachten',link:''},
     ]
 
@@ -36,13 +36,14 @@ for(let i = 1; i <= 24; i++){
     calendar.innerHTML += `<div class="door col" id=${i}>${i}</div>`;
 }
 
+
 let doors = Array.from(document.getElementsByClassName('door'));
    
 
 let show = (e) =>{
     let id = Number(e.target.id);
     let today = new Date();
-    let open = new Date(2025, 3, 1); // !!!ÄNDERN
+    let open = new Date(2025, 11, id); // !!!ÄNDERN
 
     if (open <= today){
         title.innerText = list[id-1]['text']
