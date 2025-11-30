@@ -12,6 +12,9 @@ body{
     background-repeat: no-repeat;
     height: 100%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .my-modal{
@@ -45,7 +48,7 @@ img {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
     padding: 20px;
-    gap: 20px;
+    gap: 10px;
 }
 
 .door {
