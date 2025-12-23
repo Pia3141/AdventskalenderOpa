@@ -22,7 +22,7 @@ const list =
         {id: '14', text:'Mutterkapelle',link:'files/Mutterkapelle.jpg'},
         {id: '15', text:'Pfarrheim',link:'files/Pfarrheim.jpg'},
         {id: '16', text:'Kreuz am Kehlpfad',link:'files/Kreuz.jpg'},
-        {id: '17', text:'Blaue Brücke',link:''},
+        {id: '17', text:'Huch! Wer hat sich denn da in den Kalender geschlichen?',link:'files/Screenshot_20251223-084919.Instagram.png'},
         {id: '18', text:'Großwallstadt und Kleinwallstadt',link:'files/sued.jpg'},
         {id: '19', text:'Ölbergkapelle',link:'files/Ölbergkapelle_innen.jpg'},
         {id: '20', text:'Schleuse',link:'files/Schleuse.jpg'},
