@@ -30,7 +30,7 @@ const list =
             '},
         {id: '22', text:'Brunnen hinterm Turm',link:'files/Brunnen.jpg'},
         {id: '23', text:'Kirche',link:'files/Kirche_innen.jpg'},
-        {id: '24', text:'Fröhliche Weihnachten',link:''},
+        {id: '24', text:'Fröhliche Weihnachten',link:'files/1000008320~2.jpg'},
     ]
 
 for(let i = 1; i <= 24; i++){
