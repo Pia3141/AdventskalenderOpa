@@ -26,7 +26,8 @@ const list =
         {id: '18', text:'Großwallstadt und Kleinwallstadt',link:'files/sued.jpg'},
         {id: '19', text:'Ölbergkapelle',link:'files/Ölbergkapelle_innen.jpg'},
         {id: '20', text:'Schleuse',link:'files/Schleuse.jpg'},
-        {id: '21', text:'Heimatmuseum',link:''},
+        {id: '21', text:'Heimatmuseum',link:'files/IMG_20251217_093447936~2.jpg
+            '},
         {id: '22', text:'Brunnen hinterm Turm',link:'files/Brunnen.jpg'},
         {id: '23', text:'Kirche',link:'files/Kirche_innen.jpg'},
         {id: '24', text:'Fröhliche Weihnachten',link:''},
