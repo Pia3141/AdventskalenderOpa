@@ -22,14 +22,14 @@ const list =
         {id: '14', text:'Mutterkapelle',link:'files/Mutterkapelle.jpg'},
         {id: '15', text:'Pfarrheim',link:'files/Pfarrheim.jpg'},
         {id: '16', text:'Kreuz am Kehlpfad',link:'files/Kreuz.jpg'},
-        {id: '17', text:'Huch! Wer hat sich denn da in den Kalender geschlichen?',link:'files/Screenshot_20251223-084919.Instagram.png'},
+        {id: '17', text:'Huch! Wer hat sich denn da in den Kalender geschlichen?',link:'files/Biene.png'},
         {id: '18', text:'Großwallstadt und Kleinwallstadt',link:'files/sued.jpg'},
         {id: '19', text:'Ölbergkapelle',link:'files/Ölbergkapelle_innen.jpg'},
         {id: '20', text:'Schleuse',link:'files/Schleuse.jpg'},
-        {id: '21', text:'Heimatmuseum',link:'files/IMG_20251217_093447936~2.jpg'},
+        {id: '21', text:'Heimatmuseum',link:'files/Heimatmuseum.jpg'},
         {id: '22', text:'Brunnen hinterm Turm',link:'files/Brunnen.jpg'},
         {id: '23', text:'Kirche',link:'files/Kirche_innen.jpg'},
-        {id: '24', text:'Fröhliche Weihnachten',link:'files/1000008320~2.jpg'},
+        {id: '24', text:'Fröhliche Weihnachten',link:'files/Weihnachtsbaum.jpg'},
     ]
 
 for(let i = 1; i <= 24; i++){
